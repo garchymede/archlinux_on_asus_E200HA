@@ -20,7 +20,11 @@ $ make clean && make mrproper
 
 $ git clone https://github.com/garchymede/archlinux_on_asus_E200HA.git
 
-$ mv ./archlinux_on_asus_E200HA/.config ./.config
+  $ mv ./archlinux_on_asus_E200HA/.config_with_dm-cypt ./.config
+
+<b>OR</b>
+
+  $ mv ./archlinux_on_asus_E200HA/.config_without_dm-cypt ./.config
 
 $ make xconfig
 
