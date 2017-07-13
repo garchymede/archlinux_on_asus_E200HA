@@ -13,6 +13,8 @@ $ mkdir kernelbuild && cd ./kernelbuild
 
 $ wget https://git.kernel.org/pub/scm/linux/kernel/git/tiwai/sound.git/commit/?h=topic/asus-e100h-4.12
 
+$ wget https://git.kernel.org/pub/scm/linux/kernel/git/tiwai/sound.git/snapshot/sound-topic/asus-e100h-4.12.tar.gz
+
 $ tar xvf asus-e100h-4.12.tar.gz
 
 $ cd ./asus-e100h-4.12
@@ -47,7 +49,7 @@ $ cp /etc/mkinitcpio.d/linux.preset /etc/mkinitcpio.d/vivobook.preset
 and modify the file according to the name you chose. There are 3 changes to do :
 - vmlinuz-linux => vmlinux-vivobook
 - initramfs-linux.img => initramfs-linux.img
-- initramfs-linux-fallback.img => initramfs-vivobook-fallback.img
+- initramfs-linux.img => initramfs-vivobook.img
 
 $ mkinitcpio -p vivobook
 
