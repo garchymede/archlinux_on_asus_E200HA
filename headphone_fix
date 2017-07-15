@@ -1,0 +1,17 @@
+  ## sudo pacman -S acpid
+  ## sudo vim /etc/acpi/handler.sh
+  
+  jack/headphone)
+         case "$3" in
+             plug)
+                  logger 'Headphone pluged'
+                  amixer set Headphone unmute
+                  amixer set 'Ext Spk' mute
+             ;;
+             unplug)
+                 logger 'Headphone unpluged'
+                 amixer set 'Ext Spk' unmute
+                 amixer set Headphone mute
+             ;;
+        esac    
+        ;;  
