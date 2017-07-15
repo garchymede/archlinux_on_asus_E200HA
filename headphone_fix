@@ -5,11 +5,13 @@
          case "$3" in
              plug)
                   logger 'Headphone pluged'
+                  amixer set DAC1 40
                   amixer set Headphone unmute
                   amixer set 'Ext Spk' mute
              ;;
              unplug)
                  logger 'Headphone unpluged'
+                 amixer set DAC1 100
                  amixer set 'Ext Spk' unmute
                  amixer set Headphone mute
              ;;
